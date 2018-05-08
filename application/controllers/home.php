@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class home extends CI_Controller {
+<<<<<<< HEAD
 	public function __construct()
 	{
 		parent::__construct();
@@ -15,6 +16,11 @@ class home extends CI_Controller {
 	{
 		$data['products'] = $this->products_model->all();
 		$this->load->view('index', $data);
+=======
+	public function index()
+	{
+		$this->load->view('index');
+>>>>>>> f829e928c604354871b8b05f377b5a73f5051713
 		$this->footer();
 	}
 
@@ -22,6 +28,7 @@ class home extends CI_Controller {
 	{
 		$this->load->view('footer');
 	}
+<<<<<<< HEAD
 
 	public function add_to_cart($product_id)
 	{
@@ -58,4 +65,6 @@ class home extends CI_Controller {
 		$this->cart->destroy();
 		redirect(base_url());
 	}
+=======
+>>>>>>> f829e928c604354871b8b05f377b5a73f5051713
 }

@@ -31,7 +31,11 @@
 
 			<div class="wrap_header">
 				<!-- Logo -->
+<<<<<<< HEAD
 				<a href="<?php echo base_url(); ?>" class="logo">
+=======
+				<a href="index.html" class="logo">
+>>>>>>> f829e928c604354871b8b05f377b5a73f5051713
 					<img src="images/icons/Pocica2.png" alt="IMG-LOGO">
 				</a>
 
@@ -80,11 +84,16 @@
 
 					<div class="header-wrapicon2">
 						<img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+<<<<<<< HEAD
 						<span class="header-icons-noti"><?php echo $this->cart->total_items(); ?></span>
+=======
+						<span class="header-icons-noti">0</span>
+>>>>>>> f829e928c604354871b8b05f377b5a73f5051713
 
 						<!-- Header cart noti -->
 						<div class="header-cart header-dropdown">
 							<ul class="header-cart-wrapitem">
+<<<<<<< HEAD
 
 								<?php foreach ($this->cart->contents() as $items) : ?>
 									<li class="header-cart-item">
@@ -110,13 +119,71 @@
 
 							<div class="header-cart-total">
 								Total: RP <?php echo number_format($this->cart->total(),0,',','.') ?>
+=======
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-01.jpg" alt="IMG">
+									</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											White Shirt With Pleat Detail Back
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $19.00
+										</span>
+									</div>
+								</li>
+
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-02.jpg" alt="IMG">
+									</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											Converse All Star Hi Black Canvas
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $39.00
+										</span>
+									</div>
+								</li>
+
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-03.jpg" alt="IMG">
+									</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											Nixon Porter Leather Watch In Tan
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $17.00
+										</span>
+									</div>
+								</li>
+							</ul>
+
+							<div class="header-cart-total">
+								Total: $75.00
+>>>>>>> f829e928c604354871b8b05f377b5a73f5051713
 							</div>
 
 							<div class="header-cart-buttons">
 								<div class="header-cart-wrapbtn">
 									<!-- Button -->
+<<<<<<< HEAD
 									<a href="<?php echo base_url(); ?>home/clear_cart" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
 										Clear Cart
+=======
+									<a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+										View Cart
+>>>>>>> f829e928c604354871b8b05f377b5a73f5051713
 									</a>
 								</div>
 
@@ -136,7 +203,11 @@
 		<!-- Header Mobile -->
 		<div class="wrap_header_mobile">
 			<!-- Logo moblie -->
+<<<<<<< HEAD
 			<a href="<?php echo base_url(); ?>" class="logo-mobile">
+=======
+			<a href="index.html" class="logo-mobile">
+>>>>>>> f829e928c604354871b8b05f377b5a73f5051713
 				<img src="images/icons/Pocica2.png" alt="IMG-LOGO">
 			</a>
 
@@ -152,6 +223,7 @@
 
 					<div class="header-wrapicon2">
 						<img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+<<<<<<< HEAD
 						<span class="header-icons-noti"><?php echo $this->cart->total_items(); ?></span>
 
 						<!-- Header cart noti --><div class="header-cart header-dropdown">
@@ -181,13 +253,76 @@
 
 							<div class="header-cart-total">
 								Total: RP <?php echo number_format($this->cart->total(),0,',','.') ?>
+=======
+						<span class="header-icons-noti">0</span>
+
+						<!-- Header cart noti -->
+						<div class="header-cart header-dropdown">
+							<ul class="header-cart-wrapitem">
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-01.jpg" alt="IMG">
+									</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											White Shirt With Pleat Detail Back
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $19.00
+										</span>
+									</div>
+								</li>
+
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-02.jpg" alt="IMG">
+									</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											Converse All Star Hi Black Canvas
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $39.00
+										</span>
+									</div>
+								</li>
+
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-03.jpg" alt="IMG">
+									</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											Nixon Porter Leather Watch In Tan
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $17.00
+										</span>
+									</div>
+								</li>
+							</ul>
+
+							<div class="header-cart-total">
+								Total: $75.00
+>>>>>>> f829e928c604354871b8b05f377b5a73f5051713
 							</div>
 
 							<div class="header-cart-buttons">
 								<div class="header-cart-wrapbtn">
 									<!-- Button -->
+<<<<<<< HEAD
 									<a href="<?php echo base_url(); ?>home/clear_cart" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
 										Clear Cart
+=======
+									<a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+										View Cart
+>>>>>>> f829e928c604354871b8b05f377b5a73f5051713
 									</a>
 								</div>
 
