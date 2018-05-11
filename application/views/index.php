@@ -115,7 +115,7 @@
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Dresses
+								Bags
 							</a>
 						</div>
 					</div>
@@ -127,7 +127,7 @@
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Sunglasses
+								Pocica
 							</a>
 						</div>
 					</div>
@@ -141,7 +141,7 @@
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Watches
+								Pouch
 							</a>
 						</div>
 					</div>
@@ -153,7 +153,7 @@
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Footerwear
+								Custom
 							</a>
 						</div>
 					</div>
@@ -167,7 +167,7 @@
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Bags
+								Pocica
 							</a>
 						</div>
 					</div>
@@ -266,13 +266,13 @@
 				<div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
 					<!-- Block3 -->
 					<div class="block3">
-						<a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
+						<a href="blog-detail.php" class="block3-img dis-block hov-img-zoom">
 							<img src="images<?php echo base_url(). 'blog'; ?>-01.jpg" alt="IMG-BLOG">
 						</a>
 
 						<div class="block3-txt p-t-14">
 							<h4 class="p-b-7">
-								<a href="blog-detail.html" class="m-text11">
+								<a href="blog-detail.php" class="m-text11">
 									Black Friday Guide: Best Sales & Discount Codes
 								</a>
 							</h4>
@@ -338,186 +338,12 @@
 		</div>
 	</section>
 
-	<!-- Instagram -->
-	<section class="instagram p-t-20">
-		<div class="sec-title p-b-52 p-l-15 p-r-15">
-			<h3 class="m-text5 t-center">
-				@ follow us on Instagram
-			</h3>
-		</div>
-
-<!--
-<script src="text/javascript">
-	$(document).ready(function() {
-
-        $.getJSON("https://api.instagram.com/v1/users/pocica.id/media/recent?access_token=54005593.b9916de.5d5b040b85124dbda2adecf54ff9dcd3&count=5&callback=?", function (e) {
-            var t = "";
-            $.each(e.data, function (e) {
-                cap = null == this.caption ? "" : ' title="' + this.caption.text + '"';
-                t += '<a class="ig_link" href="' + this.link + '"' + cap + ' target="_blank"><img class="ig_img" src="' + this.images.thumbnail.url + '" /></a>'
-            });
-            $(".instagram").append(t)
-        })
-
-	})
-</script>
-<div class="instagram"></div>
--->
-
-		<div class="flex-w">
-			<!-- Block4 -->
-			<div class="block4 wrap-pic-w">
-				<img src="images/gallery-03.jpg" alt="IMG-INSTAGRAM">
-
-				<a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
-					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
-						<i class="icon_heart_alt fs-20 p-r-12" aria-hidden="true"></i>
-						<span class="p-t-2">39</span>
-					</span>
-
-					<div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
-						<p class="s-text10 m-b-15 h-size1 of-hidden">
-							Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.
-						</p>
-
-						<span class="s-text9">
-							Photo by @nancyward
-						</span>
-					</div>
-				</a>
-			</div>
-
-			<!-- Block4 -->
-			<div class="block4 wrap-pic-w">
-				<img src="images/gallery-07.jpg" alt="IMG-INSTAGRAM">
-
-				<a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
-					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
-						<i class="icon_heart_alt fs-20 p-r-12" aria-hidden="true"></i>
-						<span class="p-t-2">39</span>
-					</span>
-
-					<div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
-						<p class="s-text10 m-b-15 h-size1 of-hidden">
-							Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.
-						</p>
-
-						<span class="s-text9">
-							Photo by @nancyward
-						</span>
-					</div>
-				</a>
-			</div>
-
-			<!-- Block4 -->
-			<div class="block4 wrap-pic-w">
-				<img src="images/gallery-09.jpg" alt="IMG-INSTAGRAM">
-
-				<a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
-					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
-						<i class="icon_heart_alt fs-20 p-r-12" aria-hidden="true"></i>
-						<span class="p-t-2">39</span>
-					</span>
-
-					<div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
-						<p class="s-text10 m-b-15 h-size1 of-hidden">
-							Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.
-						</p>
-
-						<span class="s-text9">
-							Photo by @nancyward
-						</span>
-					</div>
-				</a>
-			</div>
-
-			<!-- Block4 -->
-			<div class="block4 wrap-pic-w">
-				<img src="images/gallery-13.jpg" alt="IMG-INSTAGRAM">
-
-				<a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
-					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
-						<i class="icon_heart_alt fs-20 p-r-12" aria-hidden="true"></i>
-						<span class="p-t-2">39</span>
-					</span>
-
-					<div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
-						<p class="s-text10 m-b-15 h-size1 of-hidden">
-							Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.
-						</p>
-
-						<span class="s-text9">
-							Photo by @nancyward
-						</span>
-					</div>
-				</a>
-			</div>
-
-			<!-- Block4 -->
-			<div class="block4 wrap-pic-w">
-				<img src="images/gallery-15.jpg" alt="IMG-INSTAGRAM">
-
-				<a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
-					<span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
-						<i class="icon_heart_alt fs-20 p-r-12" aria-hidden="true"></i>
-						<span class="p-t-2">39</span>
-					</span>
-
-					<div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
-						<p class="s-text10 m-b-15 h-size1 of-hidden">
-							Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.
-						</p>
-
-						<span class="s-text9">
-							Photo by @nancyward
-						</span>
-					</div>
-				</a>
-			</div>
-		</div>
-	</section>
-
-	<!-- Shipping -->
-	<section class="shipping bgwhite p-t-62 p-b-46">
-		<div class="flex-w p-l-15 p-r-15">
-			<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
-				<h4 class="m-text12 t-center">
-					Free Delivery Worldwide
-				</h4>
-
-				<a href="#" class="s-text11 t-center">
-					Click here for more info
-				</a>
-			</div>
-
-			<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 bo2 respon2">
-				<h4 class="m-text12 t-center">
-					30 Days Return
-				</h4>
-
-				<span class="s-text11 t-center">
-					Simply return it within 30 days for an exchange.
-				</span>
-			</div>
-
-			<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
-				<h4 class="m-text12 t-center">
-					Store Opening
-				</h4>
-
-				<span class="s-text11 t-center">
-					Shop open from Monday to Sunday
-				</span>
-			</div>
-		</div>
-	</section>
-
 	<!-- Back to top -->
 	<div class="btn-back-to-top bg0-hov" id="myBtn">
 		<span class="symbol-btn-back-to-top">
 			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
 		</span>
-	</div>
+	</div>-->
 
 	<!-- Container Selection1 -->
 	<div id="dropDownSelect1"></div>
