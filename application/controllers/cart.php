@@ -8,9 +8,10 @@ class cart extends CI_Controller {
 		$this->load->database(); 
 		$this->load->model('products_model');
 		$this->load->library('cart');
+
 	}
 	public function index()
 	{
-		$this->load->view('cart');
+		$this->load->view('show_cart');
 	}
 }

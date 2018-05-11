@@ -56,9 +56,41 @@
 
 				<!-- Header Icon -->
 				<div class="header-icons">
-					<a href="#" class="header-wrapicon1 dis-block">
-						<img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
-					</a>
+					<div class="header-wrapicon1">
+						<img style="cursor: pointer;" src="<?php echo base_url(); ?>images/icons/icon-header-01.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+
+						<!-- Header users noti -->
+						<div class="header-cart header-dropdown">
+							<?php if($this->session->userdata('username')) { ?>
+								<div class="header-cart-total" style="text-align: center;">
+									You Are : <?=$this->session->userdata('username')?>
+								</div>
+								<div class="header-cart-buttons">
+									<div class="header-cart-wrapbtn" style="margin: 0 auto">
+										<!-- Button -->
+										<a href="<?php echo base_url(); ?>login/logout" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+											Logout
+										</a>
+									</div>
+								</div>
+							<?php } else { ?>
+								<div class="header-cart-buttons">
+									<div class="header-cart-wrapbtn">
+										<!-- Button -->
+										<a href="<?php echo base_url(); ?>login" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+											Login
+										</a>
+									</div>
+									<div class="header-cart-wrapbtn">
+										<!-- Button -->
+										<a href="<?php echo base_url(); ?>signup/tambah" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+											Sign Up
+										</a>
+									</div>
+								</div>
+							<?php } ?>
+						</div>
+					</div>
 
 					<span class="linedivide1"></span>
 
@@ -128,9 +160,41 @@
 			<div class="btn-show-menu">
 				<!-- Header Icon mobile -->
 				<div class="header-icons-mobile">
-					<a href="#" class="header-wrapicon1 dis-block">
-						<img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
-					</a>
+					<div class="header-wrapicon1">
+						<img style="cursor: pointer;" src="<?php echo base_url(); ?>images/icons/icon-header-01.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+
+						<!-- Header users noti -->
+						<div class="header-cart header-dropdown">
+							<?php if($this->session->userdata('username')) { ?>
+								<div class="header-cart-total" style="text-align: center;">
+									You Are : <?=$this->session->userdata('username')?>
+								</div>
+								<div class="header-cart-buttons">
+									<div class="header-cart-wrapbtn" style="margin: 0 auto">
+										<!-- Button -->
+										<a href="<?php echo base_url(); ?>login/logout" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+											Logout
+										</a>
+									</div>
+								</div>
+							<?php } else { ?>
+								<div class="header-cart-buttons">
+									<div class="header-cart-wrapbtn">
+										<!-- Button -->
+										<a href="<?php echo base_url(); ?>login" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+											Login
+										</a>
+									</div>
+									<div class="header-cart-wrapbtn">
+										<!-- Button -->
+										<a href="<?php echo base_url(); ?>signup/tambah" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+											Sign Up
+										</a>
+									</div>
+								</div>
+							<?php } ?>
+						</div>
+					</div>
 
 					<span class="linedivide2"></span>
 

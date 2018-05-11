@@ -10,7 +10,6 @@ class contact extends CI_Controller {
 		$this->load->library('cart');
 
 	}
-
 	public function index()
 	{
 		$this->load->view('contact');

@@ -10,7 +10,6 @@ class about extends CI_Controller {
 		$this->load->library('cart');
 
 	}
-
 	public function index()
 	{
 		$this->load->view('about');

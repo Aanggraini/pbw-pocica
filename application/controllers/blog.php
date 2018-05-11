@@ -8,8 +8,8 @@ class blog extends CI_Controller {
 		$this->load->database(); 
 		$this->load->model('products_model');
 		$this->load->library('cart');
-	}
 
+	}
 	public function index()
 	{
 		$this->load->view('blog');
