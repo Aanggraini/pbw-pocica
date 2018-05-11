@@ -37,9 +37,9 @@
 	<?php $this->load->view('header') ?>
 
 	<!-- Title Page -->
-	<section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background: #e5e5e5;">
+	<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/produk/indiana-black.jpg);">
 		<h2 class="l-text2 t-center">
-			LOG IN
+			Login
 		</h2>
 	</section>
 

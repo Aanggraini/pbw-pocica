@@ -34,6 +34,11 @@
 <body class="animsition">
 	<?php $this->load->view('header') ?>
 	<!-- Title Page -->
+	<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/produk/indiana-black.jpg);">
+		<h2 class="l-text2 t-center">
+			Cart
+		</h2>
+	</section>
 
 	<!-- Cart -->
 	<section class="cart bgwhite p-t-70 p-b-100">

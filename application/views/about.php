@@ -73,7 +73,19 @@
 			</div>
 		</div>
 	</section>
-
+	<section class="instagram p-t-20">
+		<div class="sec-title p-b-52 p-l-15 p-r-15">
+			<h3 class="m-text5 t-center">
+				@ follow us on Instagram
+			</h3>
+		</div>
+		<!-- InstaWidget -->
+		<div class="m-text5 t-center">
+		<!-- InstaWidget -->
+		<a href="https://instawidget.net/v/user/pocica.id" id="link-e2d4b8485413a28698b018827dffbeca2996a5d05817843725090444f8eb859e">@pocica.id</a>
+		<script src="https://instawidget.net/js/instawidget.js?u=e2d4b8485413a28698b018827dffbeca2996a5d05817843725090444f8eb859e&width=400px"></script>
+		</div>
+	</section>
 
 	<!-- Footer -->
 	<?php $this->load->view('footer') ?>
