@@ -28,7 +28,16 @@ class login extends CI_Controller {
 				// if the username and password is a match
 				$this->session->set_userdata('username', $valid_user->username);
 				$this->session->set_userdata('group', $valid_user->group);
-				redirect(base_url());
+
+				switch($valid_user->grup){
+					case 1 : //admin
+								redirect('admin/products'); 
+								break;
+					case 0 : //member
+								redirect(base_url());
+								break;
+					default: break; 
+				}
 			}
 		}
 	}

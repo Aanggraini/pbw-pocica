@@ -16,7 +16,7 @@
 			<div class="wrap_header">
 				<!-- Logo -->
 				<a href="<?php echo base_url(); ?>" class="logo">
-					<img src="images/icons/logo-pocica4.png" alt="IMG-LOGO">
+					<img src="<?php echo base_url(); ?>images/icons/logo-pocica4.png" alt="IMG-LOGO">
 				</a>
 
 				<!-- Menu -->
@@ -31,12 +31,8 @@
 								<a href="<?php echo base_url(). 'product'; ?>">Shop</a>
 							</li>
 
-							<li class="sale-noti">
-								<a href="<?php echo base_url(). 'product'; ?>">Sale</a>
-							</li>
-
 							<li>
-								<a href="<?php echo base_url(). 'cart'; ?>">Features</a>
+								<a href="<?php echo base_url(). 'cart'; ?>">Cart</a>
 							</li>
 
 							<li>
@@ -48,7 +44,7 @@
 							</li>
 
 							<li>
-								<a href="<?php echo base_url(). 'contact'; ?>">Contact</a>
+								<a href="<?php echo base_url(). 'custom'; ?>">Custom Order</a>
 							</li>
 						</ul>
 					</nav>
@@ -95,7 +91,7 @@
 					<span class="linedivide1"></span>
 
 					<div class="header-wrapicon2">
-						<img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+						<img src="<?php echo base_url(); ?>images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
 						<span class="header-icons-noti"><?php echo $this->cart->total_items(); ?></span>
 
 						<!-- Header cart noti -->
@@ -104,9 +100,9 @@
 
 								<?php foreach ($this->cart->contents() as $items) : ?>
 									<li class="header-cart-item">
-										<a href="home/remove_item/<?php echo $items['rowid'] ?>/<?php echo $items['qty'] ?>" class="header-cart-item-name">
+										<a href="<?php echo base_url(); ?>home/remove_item/<?php echo $items['rowid'] ?>/<?php echo $items['qty'] ?>" class="header-cart-item-name">
 											<div class="header-cart-item-img">
-													<img src="images/produk/<?php echo $items['image'] ?>" alt="<?php echo $items['name'] ?>">
+													<img src="<?php echo base_url(); ?>images/produk/<?php echo $items['image'] ?>" alt="<?php echo $items['name'] ?>">
 											</div>
 										</a>
 
@@ -138,7 +134,7 @@
 
 								<div class="header-cart-wrapbtn">
 									<!-- Button -->
-									<a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+									<a href="<?php echo base_url(); ?>cart" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
 										Check Out
 									</a>
 								</div>
@@ -153,7 +149,7 @@
 		<div class="wrap_header_mobile">
 			<!-- Logo moblie -->
 			<a href="<?php echo base_url(); ?>" class="logo-mobile">
-				<img src="images/icons/Pocica2.png" alt="IMG-LOGO">
+				<img src="<?php echo base_url(); ?>images/icons/Pocica2.png" alt="IMG-LOGO">
 			</a>
 
 			<!-- Button show menu -->
@@ -199,7 +195,7 @@
 					<span class="linedivide2"></span>
 
 					<div class="header-wrapicon2">
-						<img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+						<img src="<?php echo base_url(); ?>images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
 						<span class="header-icons-noti"><?php echo $this->cart->total_items(); ?></span>
 
 						<!-- Header cart noti --><div class="header-cart header-dropdown">
@@ -207,9 +203,9 @@
 
 								<?php foreach ($this->cart->contents() as $items) : ?>
 									<li class="header-cart-item">
-										<a href="home/remove_item/<?php echo $items['rowid'] ?>/<?php echo $items['qty'] ?>" class="header-cart-item-name">
+										<a href="<?php echo base_url(); ?>home/remove_item/<?php echo $items['rowid'] ?>/<?php echo $items['qty'] ?>" class="header-cart-item-name">
 											<div class="header-cart-item-img">
-													<img src="images/produk/<?php echo $items['image'] ?>" alt="<?php echo $items['name'] ?>">
+													<img src="<?php echo base_url(); ?>images/produk/<?php echo $items['image'] ?>" alt="<?php echo $items['name'] ?>">
 											</div>
 										</a>
 
@@ -241,7 +237,7 @@
 
 								<div class="header-cart-wrapbtn">
 									<!-- Button -->
-									<a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+									<a href="<?php echo base_url(); ?>cart" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
 										Check Out
 									</a>
 								</div>
@@ -294,7 +290,7 @@
 					</li>
 
 					<li class="item-menu-mobile">
-						<a href="/">Home</a>
+						<a href="<?php echo base_url(); ?>">Home</a>
 					</li>
 
 					<li class="item-menu-mobile">

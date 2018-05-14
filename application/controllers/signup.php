@@ -12,8 +12,18 @@
 			$username=$this->input->post('username');
 			$email=$this->input->post('email');
 			$password=$this->input->post('password');
-			$this->signup_model->tambah($username,$email,$password);
-			redirect('signup/member');
+
+			$this->load->model('users_model');
+			$valid_user = $this->users_model->check_available();
+			
+			if($valid_user == FALSE) {
+				$this->signup_model->tambah($username,$email,$password,0);
+				redirect('signup/member');
+			} else {
+				$this->session->set_flashdata('error','Username / Email is not available!');
+				redirect('signup/tambah');
+			}
+
 		}
 		public function member(){
 			$this->load->view('signin');

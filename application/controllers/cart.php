@@ -12,6 +12,12 @@ class cart extends CI_Controller {
 	}
 	public function index()
 	{
-		$this->load->view('show_cart');
+		$data['products'] = $this->products_model->all();
+		$this->load->view('show_cart', $data);
+	}
+	public function alamat()
+	{
+		$data['products'] = $this->products_model->all();
+		$this->load->view('alamat', $data);		
 	}
 }

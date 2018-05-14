@@ -31,7 +31,8 @@ class home extends CI_Controller {
 					   'qty'     => 1,
 					   'price'   => $product->price,
 					   'name'    => $product->name,
-					   'image'   => $product->image
+					   'image'   => $product->image,
+					   'weight'	 => $product->weight
 					);
 
 		$this->cart->insert($data);
@@ -47,6 +48,12 @@ class home extends CI_Controller {
 
 		$this->cart->update($data);
 		redirect(base_url());
+	}
+
+	public function remove($row_id)
+	{
+		$this->cart->remove($row_id);
+		redirect('cart');
 	}
 	
 	public function cart(){
