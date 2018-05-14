@@ -235,9 +235,11 @@
 
 				<div class="size15 trans-0-4">
 					<!-- Button -->
-					<button class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
-						Proceed to Checkout
-					</button>
+					<a href="cart/success">
+						<button class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
+							Proceed to Checkout
+						</button>
+					</a>
 				</div>
 			</div>
 
@@ -281,7 +283,8 @@
 
 			var biaya = $("#jenis").val().split(',')[0] * Math.ceil(<?php echo $berat; ?> / 1000);
 			var total_biaya = <?php echo $this->cart->total(); ?> + biaya + parseInt($("#rand").html());
-			$("#total").html("RP" + total_biaya);
+			var $total_biaya = <?php echo $this->cart->total(); ?> + biaya + parseInt($("#rand").html());
+			$("#total").html("RP " + total_biaya);
 			$("#ongkir").html("RP " + biaya);
 
 		});

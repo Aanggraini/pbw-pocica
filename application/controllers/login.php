@@ -6,6 +6,7 @@ class login extends CI_Controller {
 			$this->load->database(); 
 			$this->load->library('cart');
 			$this->load->library('form_validation');
+			$this->load->library('session');
 		}
 
 	public function index()
@@ -27,7 +28,7 @@ class login extends CI_Controller {
 			} else {
 				// if the username and password is a match
 				$this->session->set_userdata('username', $valid_user->username);
-				$this->session->set_userdata('group', $valid_user->group);
+				$this->session->set_userdata('grup', $valid_user->grup);
 
 				switch($valid_user->grup){
 					case 1 : //admin

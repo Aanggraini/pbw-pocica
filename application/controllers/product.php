@@ -16,4 +16,5 @@ class product extends CI_Controller {
 		$this->load->view('product', $data);
 		$this->load->view('footer');
 	}
+
 }

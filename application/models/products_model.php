@@ -20,5 +20,15 @@ class products_model extends CI_Model {
 		} else {
 			return array();
 		}
-	}	
+	}
+
+	public function create($data_products){
+		$this->db->insert('products', $data_products);
+	}
+
+	public function delete($id){
+		//Query DELETE ... WHERE id=...
+		$this->db->where('id', $id)
+				 ->delete('products');
+	}
 }

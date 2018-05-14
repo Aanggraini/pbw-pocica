@@ -15,9 +15,9 @@ class cart extends CI_Controller {
 		$data['products'] = $this->products_model->all();
 		$this->load->view('show_cart', $data);
 	}
-	public function alamat()
+	public function success()
 	{
-		$data['products'] = $this->products_model->all();
-		$this->load->view('alamat', $data);		
+		$data['total'] = $this->input->post("total");
+		$this->load->view('order_success', $data);		
 	}
 }

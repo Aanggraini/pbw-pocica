@@ -52,16 +52,17 @@
 
 	<div class="content-w3ls">
 	<div class="form-w3ls">
-		<form action="#" method="post">
+		<div><?=validation_errors()?></div>
+		<div><?=$this->session->flashdata('error')?></div>
+		<?php echo form_open_multipart('custom/kirim');?>
 			<div class="content-wthree1">
 				<div class="form-control">
 					<div class="main-row">
 						<label class="header" style="color:black">Choose Design <span>*</span></label>
-							<select name="country">
-								<option value="none" selected="" disabled="">Pocica Custom With Character</option>
-								
-								<option value="Design">Pocica Custom With Character</option>
-								<option value="Design">Pouch Custom Reguler</option>
+							<select name="Design">
+								<option value="" selected="" disabled="">Pilih Desain</option>
+								<option value="Pocica Custom With Character">Pocica Custom With Character</option>
+								<option value="Pouch Custom Reguler">Pouch Custom Reguler</option>
 							</select>
 							<i></i>
 						
@@ -70,7 +71,7 @@
 				<div class="grid-agileits1">
 					<div class="form-control"> 
 						<label class="header" style="color:black">Jumlah Barang <span>*</span></label>
-						<input type="text" id="name" name="name" placeholder="Jumlah Barang" title="Masukkan jumlah barang" required="">
+						<input type="number" id="qty" name="qty" placeholder="Jumlah Barang" title="Masukkan jumlah barang" required="">
 					</div>
 		
 					<div class="form-control"> 
@@ -79,25 +80,25 @@
 					</div>
 		
 					<div class="form-control">	
-						<label class="header" style="color:black">Email :</label>
+						<label class="header" style="color:black">Email <span>*</span> :</label>
 						<input type="email" id="email" name="email" placeholder="Mail@example.com" title="Masukkan email yang valid" required="">
 					</div>
 					<div class="form-control"> 
-						<label class="header" style="color:black">Alamat :</label>
-						<input type="text" id="name" name="address" placeholder="Alamat" title="Masukkan alamat" required="">
+						<label class="header" style="color:black">Alamat <span>*</span> :</label>
+						<input type="text" id="address" name="address" placeholder="Alamat" title="Masukkan alamat" required="">
 					</div>
 					<div class="form-control"> 
-						<label class="header" style="color:black">Nomor Telepon :</label>
-						<input type="text" id="name" name="phone" placeholder="Nomor Telepon" title="Masukkan nomor telepon" required="">
+						<label class="header" style="color:black">Nomor Telepon <span>*</span> :</label>
+						<input type="number" id="phone" name="phone" placeholder="Nomor Telepon" title="Masukkan nomor telepon" required="">
 					</div>
 					<div class="form-control"> 
 						<label class="header" style="color:black">Keterangan :</label>
-						<textarea class="form-control" rows="4" cols="74" id="comment" title="Tuliskan detail custom yang diinginkan"></textarea>
+						<textarea class="form-control" rows="4" cols="74" name="description" title="Tuliskan detail custom yang diinginkan"></textarea>
 					</div><br>
-					<div class="form-control"> 
+					<!--<div class="form-control"> 
 						<label class="header" style="color:black">File Upload :</label>
-						<input type="file" id="name" name="address" placeholder="Alamat" title="Upload gambar yang ingin dijadikan desain custom" required="">
-					</div>
+						<input type="file" id="" name="photo" placeholder="" title="Upload gambar yang ingin dijadikan desain custom" required="">
+					</div>-->
 					
 				</div>	
 			</div>

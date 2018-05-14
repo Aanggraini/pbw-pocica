@@ -343,7 +343,7 @@
 		<span class="symbol-btn-back-to-top">
 			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
 		</span>
-	</div>-->
+	</div>
 
 	<!-- Container Selection1 -->
 	<div id="dropDownSelect1"></div>
