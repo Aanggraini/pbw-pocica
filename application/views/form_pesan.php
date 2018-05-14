@@ -56,7 +56,7 @@
 			<div class="content-wthree1">
 				<div class="form-control">
 					<div class="main-row">
-						<label class="header">Choose Design <span>*</span></label>
+						<label class="header" style="color:black">Choose Design <span>*</span></label>
 							<select name="country">
 								<option value="none" selected="" disabled="">Pocica Custom With Character</option>
 								
@@ -69,33 +69,33 @@
 				</div>
 				<div class="grid-agileits1">
 					<div class="form-control"> 
-						<label class="header">Jumlah Barang <span>*</span></label>
+						<label class="header" style="color:black">Jumlah Barang <span>*</span></label>
 						<input type="text" id="name" name="name" placeholder="Jumlah Barang" title="Masukkan jumlah barang" required="">
 					</div>
 		
 					<div class="form-control"> 
-						<label class="header">Nama <span>*</span></label>
+						<label class="header" style="color:black">Nama <span>*</span></label>
 						<input type="text" id="name" name="name" placeholder="Nama" title="Masukkan nama lengkap" required="">
 					</div>
 		
 					<div class="form-control">	
-						<label class="header">Email :</label>
+						<label class="header" style="color:black">Email :</label>
 						<input type="email" id="email" name="email" placeholder="Mail@example.com" title="Masukkan email yang valid" required="">
 					</div>
 					<div class="form-control"> 
-						<label class="header">Alamat :</label>
+						<label class="header" style="color:black">Alamat :</label>
 						<input type="text" id="name" name="address" placeholder="Alamat" title="Masukkan alamat" required="">
 					</div>
 					<div class="form-control"> 
-						<label class="header">Nomor Telepon :</label>
+						<label class="header" style="color:black">Nomor Telepon :</label>
 						<input type="text" id="name" name="phone" placeholder="Nomor Telepon" title="Masukkan nomor telepon" required="">
 					</div>
 					<div class="form-control"> 
-						<label class="header">Keterangan :</label>
+						<label class="header" style="color:black">Keterangan :</label>
 						<textarea class="form-control" rows="4" cols="74" id="comment" title="Tuliskan detail custom yang diinginkan"></textarea>
 					</div><br>
 					<div class="form-control"> 
-						<label class="header">File Upload :</label>
+						<label class="header" style="color:black">File Upload :</label>
 						<input type="file" id="name" name="address" placeholder="Alamat" title="Upload gambar yang ingin dijadikan desain custom" required="">
 					</div>
 					
