@@ -32,6 +32,15 @@
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
+	<?php 
+		if(! $this->session->userdata('grup')) {
+			$this->load->view('header');
+		} 
+		else {
+			$this->load->view('admin/header');
+		};
+	?>
+	
 
 	<!-- Header -->
 	<header class="header1">

@@ -32,8 +32,15 @@
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
-
-	<?php $this->load->view('header') ?>
+	<?php 
+		if(! $this->session->userdata('grup')) {
+			$this->load->view('header');
+		} 
+		else {
+			$this->load->view('admin/header');
+		};
+	?>
+	
 
 	<!-- Title Page -->
 	<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/produk/indiana-black.jpg);">

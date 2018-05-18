@@ -1,25 +1,26 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class login extends CI_Controller {
+class Login extends CI_Controller {
 		public function __construct(){
 			parent::__construct();
 			$this->load->database(); 
 			$this->load->library('cart');
 			$this->load->library('form_validation');
 			$this->load->library('session');
+			$this->load->library('encrypt');
 		}
 
 	public function index()
 	{
-		$this->form_validation->set_rules('username','Username','required|alpha_numeric');
-		$this->form_validation->set_rules('password','Password','required|alpha_numeric');
+		$this->form_validation->set_rules('username','Username','required');
+		$this->form_validation->set_rules('password','Password','required');
 		
 		if($this->form_validation->run() == FALSE)
 		{
 			$this->load->view('signin');
 		} else {
-			$this->load->model('users_model');
-			$valid_user = $this->users_model->check_credential();
+			$this->load->model('Users_model');
+			$valid_user = $this->Users_model->check_credential();
 			
 			if($valid_user == FALSE)
 			{
@@ -27,7 +28,10 @@ class login extends CI_Controller {
 				redirect('login');
 			} else {
 				// if the username and password is a match
+
+
 				$this->session->set_userdata('username', $valid_user->username);
+				$this->session->set_userdata('email', $valid_user->email);
 				$this->session->set_userdata('grup', $valid_user->grup);
 
 				switch($valid_user->grup){

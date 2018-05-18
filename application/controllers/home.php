@@ -1,13 +1,14 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class home extends CI_Controller {
+class Home extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
 		$this->load->database(); 
 		$this->load->model('products_model');
 		$this->load->library('cart');
+		$this->load->library('session');
 
 	}
 
@@ -25,6 +26,7 @@ class home extends CI_Controller {
 
 	public function add_to_cart($product_id)
 	{
+    	$url = $_SERVER['HTTP_REFERER'];
 		$product = $this->products_model->find($product_id);
 		$data = array(
 					   'id'      => $product->id,
@@ -36,7 +38,7 @@ class home extends CI_Controller {
 					);
 
 		$this->cart->insert($data);
-		redirect(base_url());
+		redirect($url);
 	}
 
 	public function remove_item($row_id, $qty)

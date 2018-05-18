@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class product extends CI_Controller {
+class Product extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
@@ -14,7 +14,6 @@ class product extends CI_Controller {
 	{
 		$data['products'] = $this->products_model->all();
 		$this->load->view('product', $data);
-		$this->load->view('footer');
 	}
 
 }

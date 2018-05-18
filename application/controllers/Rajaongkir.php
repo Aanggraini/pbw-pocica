@@ -6,7 +6,7 @@ class Rajaongkir extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->database(); 
-		$this->load->model('products_model');
+		$this->load->model('Products_model');
 		$this->load->library('cart');
 
 	}

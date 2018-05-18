@@ -35,17 +35,17 @@
 								<a href="<?php echo base_url(). 'cart'; ?>">Cart</a>
 							</li>
 
-							<li>
+							<!--<li>
 								<a href="<?php echo base_url(). 'blog'; ?>">Blog</a>
-							</li>
+							</li>-->
 
 							<li>
 								<a href="<?php echo base_url(). 'about'; ?>">About</a>
 							</li>
 
-							<!--<li>
+							<li>
 								<a href="<?php echo base_url(). 'custom'; ?>">Custom Order</a>
-							</li>-->
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -277,24 +277,20 @@
 					</li>
 
 					<li class="item-menu-mobile">
-						<a href="<?php echo base_url(). 'product'; ?>">Sale</a>
+						<a href="<?php echo base_url(). 'cart'; ?>">Cart</a>
 					</li>
 
-					<li class="item-menu-mobile">
-						<a href="<?php echo base_url(). 'cart'; ?>">Features</a>
-					</li>
-
+<!--
 					<li class="item-menu-mobile">
 						<a href="<?php echo base_url(). 'blog'; ?>">Blog</a>
-					</li>
+					</li>-->
 
 					<li class="item-menu-mobile">
 						<a href="<?php echo base_url(). 'about'; ?>">About</a>
 					</li>
-<!--
 					<li class="item-menu-mobile">
 						<a href="<?php echo base_url(). 'custom'; ?>">Custom Order</a>
-					</li>-->
+					</li>
 				</ul>
 			</nav>
 		</div>

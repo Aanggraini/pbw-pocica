@@ -1,14 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class products extends CI_Controller {
+class Products extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 			$this->load->library('form_validation');
 			$this->load->library('session');
-		
-		
-		//load model -> model_products
-		$this->load->model('products_model');
+			$this->load->model('products_model');
 	}
 	
 	public function index()
