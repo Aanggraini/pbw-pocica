@@ -33,11 +33,11 @@
 
 							<!--<li>
 								<a href="<?php echo base_url(). 'admin/invoices'; ?>">Invoices</a>
-							</li>-->
+							</li>
 
 							<li>
 								<a href="<?php echo base_url(). 'admin/blog'; ?>">Blog</a>
-							</li>
+							</li>-->
 						</ul>
 					</nav>
 				</div>
@@ -156,21 +156,21 @@
 						</div>
 					</li>
 
-							<li>
-								<a href="<?php echo base_url(); ?>">Home</a>
-							</li>
+					<li class="item-menu-mobile">
+						<a href="<?php echo base_url(); ?>">Home</a>
+					</li>
 
-							<li>
-								<a href="<?php echo base_url(). 'admin/products'; ?>">Product</a>
-							</li>
+					<li class="item-menu-mobile">
+						<a href="<?php echo base_url(). 'admin/products'; ?>">Product</a>
+					</li>
 
-							<!--<li>
+							<!--<li class="item-menu-mobile">
 								<a href="<?php echo base_url(). 'admin/invoices'; ?>">Invoices</a>
-							</li>-->
-
-							<li>
-								<a href="<?php echo base_url(). 'admin/blog'; ?>">Blog</a>
 							</li>
+
+					<li class="item-menu-mobile">
+						<a href="<?php echo base_url(). 'admin/blog'; ?>">Blog</a>
+					</li>-->
 				</ul>
 			</nav>
 		</div>

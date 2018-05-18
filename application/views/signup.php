@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Product</title>
+	<title>Sign Up</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -34,7 +34,15 @@
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
-	<?php $this->load->view('header') ?>
+	<?php 
+		if(! $this->session->userdata('grup')) {
+			$this->load->view('header');
+		} 
+		else {
+			$this->load->view('admin/header');
+		};
+	?>
+	
 
 	<!-- Title Page -->
 	<section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background: #e5e5e5;">
@@ -53,17 +61,17 @@
 							<h4 class="m-text14 p-b-20">
 								Sign Up
 							</h4>
-		<div><?=validation_errors()?></div>
+						<div><?=validation_errors()?></div>
 						<div><?=$this->session->flashdata('error')?></div>
 						<form action="<?php echo base_url();?>signup" method="POST">
 						<div class="search-product pos-relative bo4 of-hidden m-b-18">
-							<input class="s-text7 size1 p-l-13 p-r-13" type="text" name="username" placeholder="Username">
+							<input class="s-text7 size1 p-l-13 p-r-13" type="text" name="username" placeholder="Username" required>
 						</div>
 						<div class="search-product pos-relative bo4 of-hidden m-b-18">
-							<input class="s-text7 size1 p-l-13 p-r-13" type="text" name="email" placeholder="E-mail">
+							<input class="s-text7 size1 p-l-13 p-r-13" type="email" name="email" placeholder="E-mail" required>
 						</div>
 						<div class="search-product pos-relative bo4 of-hidden m-b-18">
-							<input class="s-text7 size1 p-l-13 p-r-13" type="password" name="password" placeholder="Password">
+							<input class="s-text7 size1 p-l-13 p-r-13" type="password" name="password" placeholder="Password" required>
 						</div>
 							<div class="header-cart-buttons m-t-20">
 								<div class="header-cart-wrapbtn">

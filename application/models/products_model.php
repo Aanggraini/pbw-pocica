@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
  
-class products_model extends CI_Model { 
+class Products_model extends CI_Model { 
 	public function all(){
 		$hasil = $this->db->get('products');
 		if($hasil->num_rows() > 0){

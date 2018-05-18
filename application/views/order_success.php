@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Cart</title>
+	<title>Thanks for Shopping</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -34,11 +34,19 @@
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
-	<?php $this->load->view('header') ?>
+	<?php 
+		if(! $this->session->userdata('grup')) {
+			$this->load->view('header');
+		} 
+		else {
+			$this->load->view('admin/header');
+		};
+	?>
+	
 	<!-- Title Page -->
 	<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/produk/indiana-black.jpg);">
 		<h2 class="l-text2 t-center">
-			Cart
+			THANKS FOR SHOPPING
 		</h2>
 	</section>
 
@@ -49,7 +57,8 @@
 			<div class="container-table-cart pos-relative">
 				<div class="wrap-table-shopping-cart bgwhite">
 					<center>
-						Terima kasih telah berbelanja pada pocica. <br> Detil pembayaran akan dikirimkan melalui email. <br> Order akan diproses paling lambat 1 x 24 jam setelah pembayaran.
+						Terima kasih telah berbelanja di pocica. <br> Total yang harus dibayarkan adalah Rp. <?php echo number_format($total,0,',','.') ?> <br>
+						Detil pembayaran selanjutnya akan dikirimkan melalui email. <br> Order akan diproses paling lambat 2 x 24 jam setelah pembayaran.
 					</center>
 				</div>
 			</div>

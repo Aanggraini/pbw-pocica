@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Product</title>
+	<title>Log In</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -34,7 +34,15 @@
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
-	<?php $this->load->view('header') ?>
+	<?php 
+		if(! $this->session->userdata('grup')) {
+			$this->load->view('header');
+		} 
+		else {
+			$this->load->view('admin/header');
+		};
+	?>
+	
 
 	<!-- Title Page -->
 	<section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(images/produk/indiana-black.jpg);">
@@ -50,11 +58,11 @@
 			<div class="row">
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-50" style="margin-left: auto; margin-right: auto;">
 					<div class="leftbar p-r-20 p-r-0-sm">
-							<h4 class="m-text14 p-b-20">
-								Log In
-							</h4>
-		<div><?=validation_errors()?></div>
-		<div><?=$this->session->flashdata('error')?></div>
+						<h4 class="m-text14 p-b-20">
+							Log In
+						</h4>
+						<div><?=validation_errors()?></div>
+						<div><?=$this->session->flashdata('error')?></div>
 						<form action="<?php echo base_url();?>login" method="POST">
 							<div class="s-text3 p-t-10 p-b-10">Username</div>
 						<div class="search-product pos-relative bo4 of-hidden">

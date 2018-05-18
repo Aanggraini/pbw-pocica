@@ -32,8 +32,16 @@
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
-
-	<?php $this->load->view('header') ?>
+	<?php 
+		if(! $this->session->userdata('grup')) {
+			$this->load->view('header');
+		} 
+		else {
+			$this->load->view('admin/header');
+		};
+	?>
+	
+	
 	<!-- breadcrumb -->
 	<div class="bread-crumb bgwhite flex-w p-l-52 p-r-15 p-t-30 p-l-15-sm">
 		<a href="index.html" class="s-text16">

@@ -1,5 +1,5 @@
 <?php
-	class signup_model extends CI_Model{
+	class Signup_model extends CI_Model{
 		public function tambah($username, $email, $password){
 			$data = array(
 				'username' => $username,

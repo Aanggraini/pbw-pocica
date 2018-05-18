@@ -1,19 +1,25 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class users_model extends CI_Model {
+class Users_model extends CI_Model {
 
 	public function check_credential()
 	{
+		$this->load->library('encrypt');
 		$username = set_value('username');
 		$password = set_value('password');
 		
 		$hasil = $this->db->where('username', $username)
-						  ->where('password', $password)
 						  ->limit(1)
 						  ->get('users');
 		
 		if($hasil->num_rows() > 0){
-			return $hasil->row();
+			$x = $hasil->row();
+			if (password_verify($password, $x->password)) {
+				return $x;
+			}
+			else { 
+				return array();
+			}
 		} else {
 			return array();
 		}
